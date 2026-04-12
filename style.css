@@ -1,0 +1,148 @@
+/* Hero background */
+.hero-section {
+  height: 100vh;
+  background-image: url('assets/images/IN.jpeg'); /* replace with your actual image URL */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Initial navbar style */
+.custom-navbar {
+  transition: all 0.3s ease-in-out;
+  background: transparent;
+}
+
+.custom-navbar.scrolled {
+  background: #fff !important;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.custom-navbar .nav-link {
+  color: white;
+  transition: color 0.3s;
+}
+
+.custom-navbar.scrolled .nav-link {
+  color: black;
+}
+
+.custom-navbar .nav-link.active {
+  color: #ff4c4c !important;
+} 
+    :root {
+      --primary-color: #e74c3c;
+      --secondary-color: #000000;
+      --text-light: #ffffff;
+      --bg-light: #f9f9f9;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+
+    .section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--secondary-color);
+      margin-bottom: 20px;
+    }
+
+    .section-subtitle {
+      font-size: 1.2rem;
+      color: #666;
+      margin-bottom: 50px;
+    }
+
+    .about-text p {
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .skill-badge {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: 0.3s ease;
+    }
+
+    .skill-badge:hover {
+      background-color: #c0392b;
+    }
+
+    .contact-card {
+      background-color: var(--bg-light);
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+
+    .form-control,
+    .btn-primary {
+      border-radius: 10px;
+      padding: 12px;
+    }
+
+    .btn-primary {
+      background-color: var(--primary-color);
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #c0392b;
+    }
+
+    .social-icons a {
+      color: var(--primary-color);
+      font-size: 1.5rem;
+      margin-right: 15px;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #c0392b;
+    }
+
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .skills-list {
+        justify-content: center;
+      }
+    }
+.about-img {
+  object-fit: cover;
+  max-height: 350px;
+}
+
+.work-box {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.work-box:hover {
+  transform: scale(1.03);
+}
+footer i {
+  transition: color 0.3s;
+}
+footer i:hover {
+  color: #e74c3c;
+}
